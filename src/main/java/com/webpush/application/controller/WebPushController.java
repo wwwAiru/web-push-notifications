@@ -26,8 +26,10 @@ public class WebPushController {
 	}
 	
 	@PostMapping("/subscribe")
-	public void subscribe(@RequestBody Subscription subscription) {
+	public ResponseEntity<?> subscribe(@RequestBody Subscription subscription) {
 		subscriptionEntityService.save(subscription);
+		HttpHeaders responseHeader = new HttpHeaders();
+		return new ResponseEntity<> (responseHeader, HttpStatus.OK);
 	}
 
 	@PostMapping("/unsubscribe")
