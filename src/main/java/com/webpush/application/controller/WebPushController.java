@@ -40,8 +40,9 @@ public class WebPushController {
 	}
 	
 	@PostMapping("/push-message")
-	public MessageDto notifyAll(@RequestBody MessageDto message) {
+	public ResponseEntity<MessageDto> notifyAll(@RequestBody MessageDto message) {
 		pushNotificationService.sendAll(message);
-		return message;		
+		HttpHeaders responseHeader = new HttpHeaders();
+		return new ResponseEntity<> (responseHeader, HttpStatus.OK);
 	}
 }
