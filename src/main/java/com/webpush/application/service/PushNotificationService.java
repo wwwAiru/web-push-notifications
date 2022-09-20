@@ -1,6 +1,6 @@
 package com.webpush.application.service;
 
-import com.webpush.application.entity.MessageDto;
+import com.webpush.application.dto.MessageDto;
 import com.webpush.application.entity.SubscriptionEntity;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

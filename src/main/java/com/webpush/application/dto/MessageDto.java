@@ -1,4 +1,4 @@
-package com.webpush.application.entity;
+package com.webpush.application.dto;
 
 import lombok.Getter;
 import lombok.Setter;

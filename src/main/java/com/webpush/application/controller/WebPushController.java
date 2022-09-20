@@ -1,6 +1,6 @@
 package com.webpush.application.controller;
 
-import com.webpush.application.entity.MessageDto;
+import com.webpush.application.dto.MessageDto;
 import com.webpush.application.service.PushNotificationService;
 import com.webpush.application.service.SubscriptionEntityService;
 import lombok.AllArgsConstructor;
